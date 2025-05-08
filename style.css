@@ -1,0 +1,216 @@
+:root{
+    --main-bg-color: hsl(0, 0%, 100%); 
+    --main-text-color: hsl(228, 45%, 44%); 
+    --card-bg-color: hsl(0, 0%, 100%); 
+    --card-shadow: rgba(0, 0, 0, 0.1); 
+    --card-growth: hsl(256, 67%, 59%);
+    --card-growth2: hsl(256, 67%, 59%, 0.3);
+
+
+
+    --card-write: hsl(39, 100%, 71%);
+    --card-content: hsl(39, 43%, 84%, 0.5);
+    --card-font: './assets/fonts/static/DMSans-Regular.ttf';
+}
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+.container { 
+    height: max-content; 
+    width: 80%;
+    overflow: auto;
+    margin: 0 auto;
+    background-color: var(--main-bg-color); 
+}
+.card,
+.card-header,
+.card-write,
+.card-schedule,
+.card-social,
+.card-grow,
+.card-audience,
+.card-quicker { 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin: 20px; 
+}
+.card-header{
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: hsl(0, 56%, 37%); 
+}
+.card-quicker{
+    background-color: var(--card-content);
+}
+.card-quicker h3{
+    font-family: var(--card-font);
+    font-size: 30px; 
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10px;
+}
+.card-quicker img{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+.card-audience h3{
+    font-family: var(--card-font);
+    font-size: 50px; 
+    width: 70%;
+    margin-bottom: 10px;
+}
+.card-audience p{
+    font-family: var(--card-font);
+    font-size: 20px; 
+    padding-bottom: 25px;
+}
+.card-audience img{
+    width: 65%;
+    height: 65%;
+    border-radius: 10px;
+}
+.card-grow{
+    padding: 40px 0;
+    background-color: var(--card-growth);
+}
+.card-grow img{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+.card-grow h3{
+    font-family: var(--card-font);
+    color: var(--main-bg-color);
+    font-size: 40px; 
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.card-social{
+    background-color: var(--card-growth2);
+    padding: 20px 0;
+}
+.card-social img{
+    margin: 15px 0;
+    padding: 20px 0;
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; 
+}
+.card-social h3{
+    font-family: var(--card-font);
+    font-size: 27px;
+    text-align: center;
+}
+.card-social p{
+    text-align: center;
+    font-size: 22px;
+}
+.card-schedule{
+    font-size: 30px;
+    background-color: var(--card-write);
+}
+.card-schedule h3{
+    font-family: var(--card-font);
+    padding-bottom: 25px;
+}
+.card-schedule img{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px; 
+}
+.card-header{
+    background-color: var(--main-text-color);
+}
+.card-header p{
+    place-content: center;
+    text-align: center;
+    color: var(--card-bg-color);
+    align-items: center;
+}
+h1{
+    font-size: 40px; 
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--main-bg-color); 
+    text-align: center; 
+}
+.card h3{
+    font-family: var(--card-font);
+    font-size: 27px; 
+    padding-bottom: 25px;
+}
+.icons{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.card-write{
+    background-color: var(--card-write); 
+    margin: 20px; 
+
+}
+.card-write img{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px; 
+}
+.card-write p{
+    font-family: var(--card-font);
+    font-size: 40px; 
+    padding-bottom: 25px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card-header{
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .card-header h1{
+        font-size: 40px; 
+        padding: 20px 0;
+    }
+    .card-header p{
+        font-size: 20px; 
+        padding: 10px 0;
+    }
+    .icons{
+        width: 80px;
+        height: 80px;
+    }
+    .card{
+        width: 90%;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 30px; 
+    }
+    
+}
